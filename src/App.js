@@ -4,6 +4,7 @@ import { Bio } from "./Components/Bio";
 import { Header } from "./Components/Header";
 import { NewPost } from "./Components/NewPost";
 import { Post } from "./Components/Post";
+import { AlurakutMenuProfileSidebar } from "./Components/ProfileSidebar";
 import "./reset.css";
 import { Wrapper, BodyContainer } from "./styles";
 
@@ -51,7 +52,7 @@ function App() {
     <Wrapper>
       <Header />
       <BodyContainer>
-        <div className="cu1" />
+      <AlurakutMenuProfileSidebar></AlurakutMenuProfileSidebar>
         <div>
           <Bio />
           <NewPost />
