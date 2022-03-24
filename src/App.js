@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./App.css";
 import { Bio } from "./Components/Bio";
+import {Carrossel} from "./Components/Carrossel";
 import { Header } from "./Components/Header";
 import { NewPost } from "./Components/NewPost";
 import { Post } from "./Components/Post";
@@ -79,7 +80,7 @@ function App() {
       children: (
         <>
           <p ref={formRef}>Uma proposta mais clássica mas nada típica</p>
-          <img src="/images/eu.gif" alt="eu" />
+          <Carrossel imgSrcs={['/images/eu.gif', '/images/guvvolvo.png']}/>
         </>
       ),
     },
