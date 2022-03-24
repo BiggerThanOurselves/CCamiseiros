@@ -135,16 +135,8 @@ export const MenuBurguer = styled(MenuOutlined)`
   padding: 6px;
   border-radius: 50px;
   margin-right: 0.5rem;
+
+  @media only screen and (min-width: 650px) {
+    display: none;
+  }
 `;
-
-
-
-
-
-
-
-
-
-
-
-
