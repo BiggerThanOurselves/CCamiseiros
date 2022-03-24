@@ -33,7 +33,7 @@ function App() {
 
   const friends = [
     {
-      title: 'O Ju',
+      title: 'Betinho Ju',
       followers: 4231,
       imgSrc: '/images/urso.jpeg'
     },{
