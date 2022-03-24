@@ -25,5 +25,10 @@ export const Title = styled.h2`
     color: #0a6a9d;
     font-weight: bold;
   }
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `;
 
