@@ -8,18 +8,19 @@ export const Container = styled.div`
 export const LeftArrow = styled.div`
   position: absolute;
   width: fit-content;
-  top: 50%;
-  left: 1%;
+  top: 45%;
+  left: 0%;
+  transform: translate(16px);
   cursor: pointer;
   display: ${({ first }) => first ? 'none' : 'block'}
 `;
 
 export const RightArrow = styled.div`
   width: fit-content;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translate(50px);
   position: absolute;
-  top: 50%;
-  left: 90%;
+  top: 45%;
+  left: 100%;
   cursor: pointer;
   display: ${({ last }) => last ? 'none' : 'block'}
 `;
