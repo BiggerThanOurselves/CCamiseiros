@@ -7,8 +7,6 @@ export const BodyContainer = styled.div`
   display: grid;
   grid-template-columns: 2.5fr 6fr 3fr;
   grid-gap: 1rem;
-  height: 20rem;
-  background: red;
 
   .cu {
     background: green;
