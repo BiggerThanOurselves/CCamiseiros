@@ -23,4 +23,10 @@ export const BodyContainer = styled.div`
   .cu2 {
     background: yellow
   }
-`;
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    .cu1, .cu2{
+      display: none;
+    }
+ `;

@@ -14,6 +14,11 @@ export const Container = styled.div`
 
   margin-top: 1rem;
 
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
   button {
     width: fit-content;
     color: #337ab7;
@@ -21,41 +26,19 @@ export const Container = styled.div`
     border: 1px solid #c5c6ca;
     boder-radius: 7px;
     cursor: pointer;
+    margin: 0 0 0 auto;
   }
 
   button:hover {
     background: #eee;
   }
-
-  img {
-    width: 100%;
-  }
-`;
-
-export const Header = styled.div`
-  display: flex;
-  gap: 0.5rem;
-
-  span {
-    font-size: 14px;
-    color: #337ab7;
-  }
-
-  h4 {
-    margin-top: 0.5rem;
-    font-size: 16px;
-    font-weight: bold;
-  }
   
-  img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
+  textarea {
+    resize: vertical; 
+    margin: 1rem 0;
+    border-color: #ccc;
   }
+
 `;
 
-export const Body = styled.div`
-  padding: 1rem;
-  background: #f0f7ff;
-  margin: 1rem 0;
-`;
+
