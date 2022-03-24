@@ -60,7 +60,7 @@ export const Bio = () => {
           camisetas que criamos pro curso. Espero que você goste das camisetas,{" "}
           <Warning>o post fixado é o link do forms.</Warning>
         </p>
-        <img src="/images/eu.gif" />
+        <img src="/images/eu.gif" alt='eu'/>
         <p>
           <strong>
             <i>Se liga nos posts!</i>

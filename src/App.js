@@ -16,7 +16,7 @@ function App() {
       children: (
         <>
           <p>Uma proposta mais clássica mas nada típica</p>
-          <img src='/images/eu.gif'/>
+          <img src='/images/eu.gif' alt='eu'/>
         </>
       )
     },
