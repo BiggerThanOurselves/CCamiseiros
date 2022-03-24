@@ -12,8 +12,8 @@ function App() {
 
   const posts = [
     {
-      avatarSrc: "/images/eu.gif",
-      username: "Guvolvo",
+      avatarSrc: "/images/guvvolvo.png",
+      username: "Guvvolvo",
       title: "Form para garantir a camisa! 📑📝",
       fixed: false,
       children: (

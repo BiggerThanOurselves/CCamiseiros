@@ -76,8 +76,8 @@ export const Bio = () => {
         </Notification>
       </BodyContainer>
       <StatusContainer>
-        {status.map((stat) => (
-          <BioIcon {...stat} />
+        {status.map((stat, index) => (
+          <BioIcon {...stat} key={index} />
         ))}
       </StatusContainer>
     </Container>
