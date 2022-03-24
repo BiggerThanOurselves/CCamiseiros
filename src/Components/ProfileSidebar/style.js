@@ -66,6 +66,7 @@ export const IconText = styled.p`
     display: flex;
     justify-content: flex-start;
     cursor: pointer;
+    
     &:hover {
         text-decoration: underline;
     }
