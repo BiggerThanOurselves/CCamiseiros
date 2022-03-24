@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  padding-bottom: 3rem;
+`;
+
 export const BodyContainer = styled.div`
   max-width: 1100px;
   margin: 0 auto;
