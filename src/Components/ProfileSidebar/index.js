@@ -9,7 +9,6 @@ import {
   IconText,
   ImageProfile,
   Line,
-  ProfileSidebarMenu,
   Title,
 } from './style';
 
