@@ -58,4 +58,13 @@ export const Body = styled.div`
   padding: 1rem;
   background: #f0f7ff;
   margin: 1rem 0;
+  
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  strong {
+    font-weight: bold;
+  }
 `;
+
