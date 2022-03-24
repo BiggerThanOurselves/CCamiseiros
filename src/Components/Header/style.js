@@ -35,7 +35,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
