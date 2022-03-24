@@ -15,7 +15,7 @@ import {
 } from "./style.js";
 
 export const Header = () => {
-  const [inputActive, setInputActive] = useState(false);
+  const [inputActive, setInputActive] = useState(true);
 
   return (
     <Wrapper>

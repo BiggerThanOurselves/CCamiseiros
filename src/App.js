@@ -1,20 +1,63 @@
 import { useEffect, useRef } from "react";
 import "./App.css";
 import { Bio } from "./Components/Bio";
+import {Carrossel} from "./Components/Carrossel";
 import { Header } from "./Components/Header";
 import { NewPost } from "./Components/NewPost";
 import { Post } from "./Components/Post";
 import { MenuProfileSidebar } from "./Components/ProfileSidebar";
+import {Section} from "./Components/Section";
 import "./reset.css";
-import { Wrapper, BodyContainer } from "./styles";
+import { Divider, Wrapper, BodyContainer } from "./styles";
 
 function App() {
   const formRef = useRef();
 
+  const comunidades = [
+    {
+      title: 'Eu Odeio Acordar Cedo',
+      followers: 1234513,
+      imgSrc: '/images/garfield.png'
+    },{
+      title: 'Elas@Computação',
+      followers: 423,
+      imgSrc: '/images/elas.png'
+    },{
+      title: 'Amo meu pet',
+      followers: 700,
+      imgSrc: '/images/pet.png'
+    },{
+      title: 'Sou opendever',
+      followers: 400,
+      imgSrc: '/images/pidevi.png'
+    },
+  ];
+
+  const friends = [
+    {
+      title: 'Betinho Ju',
+      followers: 4231,
+      imgSrc: '/images/urso.jpeg'
+    },{
+      title: 'Guvvolvo',
+      followers: 12,
+      imgSrc: '/images/guvvolvo.png'
+    },{
+      title: 'Leandra Ubuntu',
+      followers: 734,
+      imgSrc: 'https://avatars.githubusercontent.com/u/50140771?v=4'
+    },{
+      title: 'JRobsonJr',
+      followers: 1257,
+      imgSrc: '/images/robson.jpg'
+    },
+
+  ]
+
   const posts = [
     {
-      avatarSrc: "/images/eu.gif",
-      username: "Guvolvo",
+      avatarSrc: "/images/guvvolvo.png",
+      username: "Guvvolvo",
       title: "Form para garantir a camisa! 📑📝",
       fixed: false,
       children: (
@@ -31,14 +74,14 @@ function App() {
       ),
     },
     {
-      avatarSrc: "/images/eu.gif",
-      username: "Raduken27",
+      avatarSrc: "https://avatars.githubusercontent.com/u/50140771?v=4",
+      username: "Leandra Ubuntu",
       title: "Design 01 - Sua fardinha clássica de CC!",
       fixed: false,
       children: (
         <>
           <p ref={formRef}>Uma proposta mais clássica mas nada típica</p>
-          <img src="/images/eu.gif" alt="eu" />
+          <Carrossel imgSrcs={['/images/eu.gif', '/images/guvvolvo.png']}/>
         </>
       ),
     },
@@ -60,7 +103,11 @@ function App() {
             <Post {...post} key={index} />
           ))}
         </div>
-        <div className="cu2" />
+        <aside>
+          <Divider/>
+          <Section title='👨‍💻 meus amigos ' number={341} cards={friends} />
+          <Section title='🤝 minhas comunidades' number={99} cards={comunidades} />
+        </aside>
       </BodyContainer>
     </Wrapper>
   );
