@@ -72,8 +72,8 @@ function App() {
       ),
     },
     {
-      avatarSrc: "/images/eu.gif",
-      username: "Raduken27",
+      avatarSrc: "https://avatars.githubusercontent.com/u/50140771?v=4",
+      username: "Leandra Ubuntu",
       title: "Design 01 - Sua fardinha clássica de CC!",
       fixed: false,
       children: (

@@ -47,11 +47,11 @@ export const Bio = () => {
           <strong>Perfil criado em:</strong> 06 de março de 2022
         </Text>
         <Text>
-          <strong>Visitantes mais antigos:</strong> LeandraOS, Haduken27,
-          Guvolvo
+          <strong>Visitantes mais antigos:</strong> Leandra Ubuntu, JRobsonJR,
+          Guvvolvo
         </Text>
         <Text>
-          <strong>Azar de hoje:</strong> Bater o dedo mindinho na quina do móvel
+          <strong>Sorte do dia:</strong> Nunca é tarde para fazer o que você realmente quer fazer.
         </Text>
         <SectionTitle>Sobre mim</SectionTitle>
         <p>
