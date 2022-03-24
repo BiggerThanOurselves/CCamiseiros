@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
     background: #fff;
     height: 41rem;
@@ -8,18 +7,20 @@ export const Container = styled.div`
     padding: 0.64rem;
     border-radius: 6px;
 
-    img {
-        width: 9rem;
-        height: 9rem;
-    }
+`
+export const ImageProfile = styled.img`
+    width: 9rem;
+    height: 9rem;
+    border-radius: 8px;
+    margin-top: 16px;
 
-    hr {
+`
+export const Line = styled.hr`
     margin-top: 14px;
     margin-bottom: 14px;
     border-color: transparent;
     border-bottom-color: #ECF2FA;
-    }
-`
+`;
 
 export const Description = styled.p `
     font-size: 14px;
@@ -42,8 +43,6 @@ export const Apps = styled.p`
     font-weight: 600;
     font-size: 14px;
     color: #333;
-
-
 `
 export const ContainerTitle = styled.div`
     display: flex;
@@ -54,25 +53,20 @@ export const ContainerLogout = styled.div`
     margin-top: 2.5rem;
 `;
 
-export const ContainerHover = styled
-export const ProfileSidebarMenu = styled.div`
-a {
+export const Icon = styled.img`
+    width: 16px;
+    height: 16px;
+    margin-right: 5px; 
+`;
+
+export const IconText = styled.p`
     font-size: 16px;
     color: #2E7BB4;
     margin-bottom: 12px;
     display: flex;
     justify-content: flex-start;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px; 
-}
-
-
-
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
 `;

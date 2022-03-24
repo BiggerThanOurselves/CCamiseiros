@@ -1,76 +1,80 @@
-import React from "react";
-import {Apps, Container, ContainerLogout, ContainerTitle, Description, ProfileSidebarMenu, Title } from "./style";
+import React from 'react';
+import {
+  Apps,
+  Container,
+  ContainerLogout,
+  ContainerTitle,
+  Description,
+  Icon,
+  IconText,
+  ImageProfile,
+  Line,
+  ProfileSidebarMenu,
+  Title,
+} from './style';
 
 const BASE_URL = 'http://alurakut.vercel.app/';
 
-export const AlurakutMenuProfileSidebar = () => {
-    return (
-      <div className="alurakutMenuProfileSidebar">
-        <Container>
-          <img src={`https://github.com/LeandraOS.png`} style={{ borderRadius: '8px' , marginTop: '16px'}}/>
-          <hr />
-          <ContainerTitle>
-            <Title>CCamiseiros</Title>
-          </ContainerTitle>
-          <Description>As camisetas mais lindas, Brasil</Description>
-          <hr />
-          <AlurakutProfileSidebarMenuDefault />
-        </Container>
-      </div>
-    )
-  }
-
-  export const AlurakutProfileSidebarMenuDefault = () => {
-    return (
-      <ProfileSidebarMenu>
-        <nav>
-          <a href="/">
-            <img src={`${BASE_URL}/icons/user.svg`} />
-              Perfil
-            </a>
-          <a href="/">
-            <img src={`${BASE_URL}/icons/book.svg`} />
-              Recados
-            </a>
-          <a href="/">
-            <img src={`${BASE_URL}/icons/camera.svg`} />
-              Fotos
-            </a>
-            <a href="/">
-            <img src={`${BASE_URL}//icons/video-camera.svg`} />
-              Vídeos
-            </a>
-          <a href="/">
-            <img src={`${BASE_URL}/icons/sun.svg`} />
-              Depoimentos
-            </a>
-        </nav>
-        <hr />
-        <nav>
-            <Apps>Apps</Apps>
-            
-          <a href="/">
-            <img src={`${BASE_URL}/icons/plus.svg`} />
-              Adicionar apps
-            </a>
-            <hr/>
-            <a href="/">
-            <img src={`${BASE_URL}//icons/star.svg`} />
-            Ajudar
-            </a>
-            <a href="/">
-            <img src={`${BASE_URL}//icons/cool.svg`} />
-              Configurações
-            </a>
-            <ContainerLogout>
-            <a href="/">
-            <img src={`${BASE_URL}//icons/logout.svg`} />
-              Sair
-            </a>
-            </ContainerLogout>   
-        </nav>
-      </ProfileSidebarMenu>
-    )
-  }
-
+const icons = [
+    { name: 'Perfil', icon: 'user' },
+    { name: 'Recados', icon: 'book' },
+    { name: 'Fotos', icon: 'camera' },
+    { name: 'Vídeos', icon: 'video-camera' },
+    { name: 'Depoimentos', icon: 'sun' },
+  ];
   
+  const iconsItems = [
+    { name: 'Ajudar', icon: 'star' },
+    { name: 'Configurações', icon: 'cool' },
+  ];
+
+export const MenuProfileSidebar = () => {
+  return (
+    <Container>
+      <ImageProfile src={`https://github.com/LeandraOS.png`} />
+      <Line />
+      <ContainerTitle>
+        <Title>CCamiseiros</Title>
+      </ContainerTitle>
+      <Description>As camisetas mais lindas, Brasil</Description>
+      <Line />
+      <ProfileSidebarMenuDefault />
+    </Container>
+  );
+};
+
+export const ProfileSidebarMenuDefault = () => {
+  return (
+    <>
+      {icons.map((icons, index) => {
+        return (
+          <IconText key={index}>
+            <Icon src={`${BASE_URL}/icons/${icons.icon}.svg`} />
+            {icons.name}
+          </IconText>
+        );
+      })}
+      <Line />
+      <Apps>Apps</Apps>
+      <IconText>
+        <Icon src={`${BASE_URL}//icons/plus.svg`} />
+        Adicionar apps
+      </IconText>
+      <Line />
+      {iconsItems.map((icons, index) => {
+        return (
+          <IconText key={index}>
+            <Icon src={`${BASE_URL}/icons/${icons.icon}.svg`} />
+            {icons.name}
+          </IconText>
+        );
+      })}
+      <ContainerLogout>
+        <IconText>
+          <Icon src={`${BASE_URL}//icons/logout.svg`} />
+          Sair
+        </IconText>
+      </ContainerLogout>
+    </>
+  );
+};
