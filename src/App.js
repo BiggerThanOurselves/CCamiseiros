@@ -18,7 +18,7 @@ function App() {
       fixed: false,
       children: (
         <>
-          <p ref={formRef}>
+          <p>
             Para garantir sua(s) camiseta(s) basta preencher o form:{" "}
             <strong>link do form</strong>
           </p>
@@ -36,7 +36,7 @@ function App() {
       fixed: false,
       children: (
         <>
-          <p>Uma proposta mais clássica mas nada típica</p>
+          <p ref={formRef}>Uma proposta mais clássica mas nada típica</p>
           <img src="/images/eu.gif" alt="eu" />
         </>
       ),
