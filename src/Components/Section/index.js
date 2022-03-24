@@ -8,8 +8,8 @@ export const Section = ({ cards, title, number }) => {
       <Title>{title}<strong> ({number})</strong>
       </Title>
       <CardSection>
-        {cards.map((card) => (
-          <Card {...card} />
+        {cards.map((card, index) => (
+          <Card {...card} key={index} />
         ))}
       </CardSection>
       <All>ver todos</All>

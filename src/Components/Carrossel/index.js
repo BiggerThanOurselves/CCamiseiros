@@ -5,7 +5,6 @@ import { Container, LeftArrow, RightArrow, } from "./style";
 export const Carrossel = ({ imgSrcs }) => {
   const [carrosselIndex, setCarrosselIndex] = useState(0); 
 
-  console.log(imgSrcs[carrosselIndex])
   const next = () => {
     if (carrosselIndex !== imgSrcs.length - 1) {
       setCarrosselIndex(carrosselIndex + 1);

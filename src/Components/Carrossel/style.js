@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Arrow} from "../../assets/arrow";
 
 export const Container = styled.div`
   position: relative
