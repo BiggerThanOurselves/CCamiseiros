@@ -1,23 +1,150 @@
 import styled from "styled-components";
+import { MenuOutlined } from '@ant-design/icons';
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
-  background: linear-gradient(
-    180deg,
-    rgba(54, 139, 201, 0.92) 0%,
-    rgba(71, 147, 205, 0.81) 7.29%,
-    #609fd3 18.17%,
-    #609fd3 80.73%,
-    rgba(77, 150, 206, 0.94) 89.58%,
-    #368bc9 100%
-  );
+  background: #4485bb;
+
+  & nav ul {
+    display: flex;
+    color: white;
+    gap: 0.5rem;
+    font-size: 11px;
+  }
+
+  & li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  & li:not(:last-child):after {
+    content: '|';
+    margin-left: 0.5rem;
+    color: #185b93;
+  }
+
+  @media only screen and (max-width: 500px) {
+    nav {
+      display: none;
+    }
+  }
 `;
 
-export const Logo = styled.div`
-  width: 79px;
-  height: 32px;
-  background: url(../../public/sprite.png) -158px 0;
+
+export const Container = styled.div`
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
+
+export const NavContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+`;
+
+export const LogoContainer = styled.div`
+  background-color: white;
+  height: 2.5rem;
+  display: flex;
+  max-width: fit-content;
+
+  padding: 0 0.5rem;
+  align-items: center;
+`;
+
+export const InfoContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Email = styled.p`
+  font-size: 12px;
+  color: #0f203e;
+  font-weight: bolder;
+  letter-spacing: .7px;
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+`;
+
+
+export const Out = styled.p`
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.5rem;
+  font-size: 11px;
+ 
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;  
+  }
+
+  &:before {
+    content: '|';
+    margin-left: 0.5rem;
+    color: #185b93;
+  }
+
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+  
+`;
+
+export const InputContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: #5778a3;
+  margin-left: 0.5rem;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+
+  @media only screen and (max-width: 650px) {
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+`;
+
+export const SearchInput = styled.input`
+  max-width: 120px;
+  font-size: 12px;
+
+  @media only screen and (max-width: 650px) {
+
+    display: ${({ active }) => active ? 'flex' : 'none'};
+    max-width: 100%;
+  }
+
+`;
+
+export const MenuBurguer = styled(MenuOutlined)`
+  color: white;
+  background: #5778a3;
+  padding: 6px;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+`;
+
+
+
+
+
+
+
+
+
+
+
+
