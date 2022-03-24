@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding-bottom: 3rem;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 export const BodyContainer = styled.div`
