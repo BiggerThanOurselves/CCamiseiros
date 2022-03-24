@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
     color: #185b93;
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 650px) {
     nav {
       display: none;
     }
@@ -122,7 +122,6 @@ export const SearchInput = styled.input`
   font-size: 12px;
 
   @media only screen and (max-width: 650px) {
-
     display: ${({ active }) => active ? 'flex' : 'none'};
     max-width: 100%;
   }

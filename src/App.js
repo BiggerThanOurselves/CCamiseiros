@@ -6,7 +6,7 @@ import { NewPost } from "./Components/NewPost";
 import { Post } from "./Components/Post";
 import {Section} from "./Components/Section";
 import "./reset.css";
-import { Wrapper, BodyContainer } from "./styles";
+import { Divider, Wrapper, BodyContainer } from "./styles";
 
 function App() {
   const formRef = useRef();
@@ -33,7 +33,7 @@ function App() {
 
   const friends = [
     {
-      title: 'Urso Concurso',
+      title: 'O Ju',
       followers: 4231,
       imgSrc: '/images/urso.jpeg'
     },{
@@ -102,6 +102,7 @@ function App() {
           ))}
         </div>
         <aside>
+          <Divider/>
           <Section title='👨‍💻 meus amigos ' number={341} cards={friends} />
           <Section title='🤝 minhas comunidades' number={99} cards={comunidades} />
         </aside>
