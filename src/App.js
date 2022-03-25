@@ -5,6 +5,7 @@ import {Carrossel} from "./Components/Carrossel";
 import { Header } from "./Components/Header";
 import { NewPost } from "./Components/NewPost";
 import { Post } from "./Components/Post";
+import { MenuProfileSidebar } from "./Components/ProfileSidebar";
 import {Section} from "./Components/Section";
 import "./reset.css";
 import { Divider, Wrapper, BodyContainer } from "./styles";
@@ -94,7 +95,7 @@ function App() {
     <Wrapper>
       <Header />
       <BodyContainer>
-        <div className="cu1" />
+      <MenuProfileSidebar />
         <div>
           <Bio />
           <NewPost />
