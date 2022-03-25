@@ -30,7 +30,7 @@ export const Description = styled.p`
 
 export const Title = styled.a`
   font-size: 16px;
-  color: #2e7bb4;
+  color: #337AB7;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 800;
@@ -61,7 +61,7 @@ export const Icon = styled.img`
 
 export const IconText = styled.p`
   font-size: 16px;
-  color: #2e7bb4;
+  color: #337AB7;
   margin-bottom: 12px;
   display: flex;
   justify-content: flex-start;
