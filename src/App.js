@@ -95,7 +95,7 @@ function App() {
     <Wrapper>
       <Header />
       <BodyContainer>
-      <MenuProfileSidebar></MenuProfileSidebar>
+      <MenuProfileSidebar />
         <div>
           <Bio />
           <NewPost />
