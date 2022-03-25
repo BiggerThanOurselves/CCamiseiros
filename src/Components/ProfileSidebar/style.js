@@ -2,16 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background: #fff;
-    height: 41rem;
-    width: 100%;
+    height: fit-content;
     padding: 0.64rem;
     border-radius: 6px;
 `;
 export const ImageProfile = styled.img`
-    width: 9rem;
-    height: 9rem;
+    width: 100%;
     border-radius: 8px;
-    margin-top: 16px;
 `;
 export const Line = styled.hr`
     margin-top: 14px;
