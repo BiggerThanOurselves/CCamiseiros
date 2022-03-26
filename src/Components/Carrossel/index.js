@@ -17,12 +17,14 @@ export const Carrossel = ({ imgSrcs }) => {
     };
   };
 
+  const carrosselImages = imgSrcs.map((src) => <img src={src} alt='t-shirt postsc'/>)
+
   return (
     <Container>
       <LeftArrow first={carrosselIndex === 0} onClick={previous}>
         <Arrow />
       </LeftArrow>
-      <img src={imgSrcs[carrosselIndex]} alt='t-shirt postsc'/>
+      {carrosselImages[carrosselIndex]}
       <RightArrow last={carrosselIndex === imgSrcs.length -1} onClick={next}>
         <Arrow />
       </RightArrow>
