@@ -90,10 +90,17 @@ function App() {
             imgSrcs={[
               "/images/whiteMemeTshirt.jpg",
               "/images/blackMemeTshirt.jpg",
+            ]}
+          />
+          <br/>
+          <p>Dá uma olhadinha mais de perto no design:</p>
+          <Carrossel
+            imgSrcs={[
               "/images/whiteMeme.jpg",
               "/images/blackMeme.jpg",
             ]}
           />
+
         </>
       ),
     },
@@ -109,10 +116,17 @@ function App() {
             imgSrcs={[
               "/images/classicWhiteTshirt.jpg",
               "/images/classicBlackTshirt.jpg",
+            ]}
+          />
+          <br/>
+          <p>Dá uma olhadinha mais de perto no design:</p>
+          <Carrossel
+            imgSrcs={[
               "/images/classicWhite.jpg",
               "/images/classicBlack.jpg",
             ]}
           />
+ 
         </>
       ),
     },
