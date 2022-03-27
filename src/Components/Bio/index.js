@@ -56,8 +56,10 @@ export const Bio = () => {
         <SectionTitle>Sobre mim</SectionTitle>
         <p>
           Oii, nós somos a equipe do ccamiseiros e criamos esse site como uma
-          homenagem ao falecido Orkut e aos anos 2000! Espero que você goste das
-          camisetas que criamos pro curso. Espero que você goste das camisetas,{" "}
+          homenagem ao falecido Orkut e aos anos 2000 de forma geral!
+          <br/>Esperamos que você goste das
+          camisetas que criamos com tanto amor e zelo para o nosso curso.
+          <br/>
           <Warning>o post fixado é o link do forms.</Warning>
         </p>
         <img src="/images/eu.gif" alt='eu'/>

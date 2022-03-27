@@ -69,7 +69,11 @@ function App() {
         <>
           <p>
             Para garantir sua(s) camiseta(s) basta preencher o form:{" "}
-            <strong>link do form</strong>
+            <strong>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxAa3ftT0rOfZ_GrVIk6Ulr-Yh7txp2NuIx2uHtYVgCB-ELw/viewform" target='_blank'>
+                link do form
+              </a>
+            </strong>
           </p>
           <p>
             🥳 Os posts abaixo mostram um pouco das estampas que nós
@@ -113,7 +117,7 @@ function App() {
       children: (
         <>
           <p ref={formRef}>Uma proposta mais clássica mas nada típica</p>
-          <p ref={formRef}>As camisas são cina e preto heein!</p>
+          <p ref={formRef}>As camisas são cinza e preto heein!</p>
           <Carrossel
             imgSrcs={[
               "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/classWhiteShirt.jpg",

@@ -30,7 +30,7 @@ const icons = [
 export const MenuProfileSidebar = () => {
   return (
     <Container>
-      <ImageProfile src={`https://github.com/LeandraOS.png`} />
+      <ImageProfile src='/images/logo.jpg' />
       <Line />
       <ContainerTitle>
         <Title>CCamiseiros</Title>
