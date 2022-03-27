@@ -112,6 +112,7 @@ function App() {
       children: (
         <>
           <p ref={formRef}>Uma proposta mais clássica mas nada típica</p>
+          <p ref={formRef}>As camisas são cina e preto heein!</p>
           <Carrossel
             imgSrcs={[
               "/images/classicWhiteTshirt.jpg",
