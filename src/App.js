@@ -70,7 +70,11 @@ function App() {
           <p>
             Para garantir sua(s) camiseta(s) basta preencher o form:{" "}
             <strong>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxAa3ftT0rOfZ_GrVIk6Ulr-Yh7txp2NuIx2uHtYVgCB-ELw/viewform" target='_blank'>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfxAa3ftT0rOfZ_GrVIk6Ulr-Yh7txp2NuIx2uHtYVgCB-ELw/viewform"
+                target="_blank"
+                rel="noreferrer"
+              >
                 link do form
               </a>
             </strong>
