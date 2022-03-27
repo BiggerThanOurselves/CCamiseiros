@@ -88,8 +88,10 @@ function App() {
           <p>As camisetas são cinza e pretas heinn</p>
           <Carrossel
             imgSrcs={[
-              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/whiteMemeTshirt.jpg",
-              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/blackMemeTshirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/whiteMemeShirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/grayBackShirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/blackMemeShirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/backBlackShirt.jpg",
             ]}
           />
           <br />
@@ -104,8 +106,8 @@ function App() {
       ),
     },
     {
-      avatarSrc: "https://avatars.githubusercontent.com/u/50140771?v=4",
-      username: "Leandra Ubuntu",
+      avatarSrc: "/images/robson.jpg",
+      username: "JRobsonJr",
       title: "Design 02 - Sua fardinha clássica de CC!",
       fixed: false,
       children: (
@@ -114,8 +116,10 @@ function App() {
           <p ref={formRef}>As camisas são cina e preto heein!</p>
           <Carrossel
             imgSrcs={[
-              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/classicWhiteTshirt.jpg",
-              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/classicBlackTshirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/classWhiteShirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/grayBackShirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/classicBlackShirt.jpg",
+              "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/backBlackShirt.jpg",
             ]}
           />
           <br />
