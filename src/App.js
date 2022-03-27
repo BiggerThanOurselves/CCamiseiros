@@ -1,12 +1,12 @@
 import { useEffect, useRef } from "react";
 import "./App.css";
 import { Bio } from "./Components/Bio";
-import {Carrossel} from "./Components/Carrossel";
+import { Carrossel } from "./Components/Carrossel";
 import { Header } from "./Components/Header";
 import { NewPost } from "./Components/NewPost";
 import { Post } from "./Components/Post";
 import { MenuProfileSidebar } from "./Components/ProfileSidebar";
-import {Section} from "./Components/Section";
+import { Section } from "./Components/Section";
 import "./reset.css";
 import { Divider, Wrapper, BodyContainer } from "./styles";
 
@@ -15,44 +15,49 @@ function App() {
 
   const comunidades = [
     {
-      title: 'Eu Odeio Acordar Cedo',
+      title: "Eu Odeio Acordar Cedo",
       followers: 1234513,
-      imgSrc: '/images/garfield.png'
-    },{
-      title: 'Elas@Computação',
+      imgSrc: "/images/garfield.png",
+    },
+    {
+      title: "Elas@Computação",
       followers: 423,
-      imgSrc: '/images/elas.png'
-    },{
-      title: 'Amo meu pet',
+      imgSrc: "/images/elas.png",
+    },
+    {
+      title: "Amo meu pet",
       followers: 700,
-      imgSrc: '/images/pet.png'
-    },{
-      title: 'Sou opendever',
+      imgSrc: "/images/pet.png",
+    },
+    {
+      title: "Sou opendever",
       followers: 400,
-      imgSrc: '/images/pidevi.png'
+      imgSrc: "/images/pidevi.png",
     },
   ];
 
   const friends = [
     {
-      title: 'Betinho Ju',
+      title: "Betinho Ju",
       followers: 4231,
-      imgSrc: '/images/urso.jpeg'
-    },{
-      title: 'Guvvolvo',
-      followers: 12,
-      imgSrc: '/images/guvvolvo.png'
-    },{
-      title: 'Leandra Ubuntu',
-      followers: 734,
-      imgSrc: 'https://avatars.githubusercontent.com/u/50140771?v=4'
-    },{
-      title: 'JRobsonJr',
-      followers: 1257,
-      imgSrc: '/images/robson.jpg'
+      imgSrc: "/images/urso.jpeg",
     },
-
-  ]
+    {
+      title: "Guvvolvo",
+      followers: 12,
+      imgSrc: "/images/guvvolvo.png",
+    },
+    {
+      title: "Leandra Ubuntu",
+      followers: 734,
+      imgSrc: "https://avatars.githubusercontent.com/u/50140771?v=4",
+    },
+    {
+      title: "JRobsonJr",
+      followers: 1257,
+      imgSrc: "/images/robson.jpg",
+    },
+  ];
 
   const posts = [
     {
@@ -76,12 +81,38 @@ function App() {
     {
       avatarSrc: "https://avatars.githubusercontent.com/u/50140771?v=4",
       username: "Leandra Ubuntu",
-      title: "Design 01 - Sua fardinha clássica de CC!",
+      title: "Design 01 - babou bebê?",
+      fixed: false,
+      children: (
+        <>
+          <p>As camisetas são cinza e pretas heinn</p>
+          <Carrossel
+            imgSrcs={[
+              "/images/whiteMemeTshirt.jpg",
+              "/images/blackMemeTshirt.jpg",
+              "/images/whiteMeme.jpg",
+              "/images/blackMeme.jpg",
+            ]}
+          />
+        </>
+      ),
+    },
+    {
+      avatarSrc: "https://avatars.githubusercontent.com/u/50140771?v=4",
+      username: "Leandra Ubuntu",
+      title: "Design 02 - Sua fardinha clássica de CC!",
       fixed: false,
       children: (
         <>
           <p ref={formRef}>Uma proposta mais clássica mas nada típica</p>
-          <Carrossel imgSrcs={['/images/eu.gif', '/images/guvvolvo.png']}/>
+          <Carrossel
+            imgSrcs={[
+              "/images/classicWhiteTshirt.jpg",
+              "/images/classicBlackTshirt.jpg",
+              "/images/classicWhite.jpg",
+              "/images/classicBlack.jpg",
+            ]}
+          />
         </>
       ),
     },
@@ -104,9 +135,13 @@ function App() {
           ))}
         </div>
         <aside>
-          <Divider/>
-          <Section title='👨‍💻 meus amigos ' number={341} cards={friends} />
-          <Section title='🤝 minhas comunidades' number={99} cards={comunidades} />
+          <Divider />
+          <Section title="👨‍💻 meus amigos " number={341} cards={friends} />
+          <Section
+            title="🤝 minhas comunidades"
+            number={99}
+            cards={comunidades}
+          />
         </aside>
       </BodyContainer>
     </Wrapper>
