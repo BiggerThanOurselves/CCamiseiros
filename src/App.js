@@ -88,19 +88,18 @@ function App() {
           <p>As camisetas são cinza e pretas heinn</p>
           <Carrossel
             imgSrcs={[
-              "/images/whiteMemeTshirt.jpg",
-              "/images/blackMemeTshirt.jpg",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/classicWhiteTshirt.jpg?token=GHSAT0AAAAAABSX2BBOXBIGPXCV3TWKYIA6YR7YZVQ",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/blackMemeTshirt.jpg?token=GHSAT0AAAAAABSX2BBOYOGH54OJJUOJALLCYR7YW2A",
             ]}
           />
-          <br/>
+          <br />
           <p>Dá uma olhadinha mais de perto no design:</p>
           <Carrossel
             imgSrcs={[
-              "/images/whiteMeme.jpg",
-              "/images/blackMeme.jpg",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/whiteMeme.jpg?token=GHSAT0AAAAAABSX2BBPAVVV3E7JR3DS67BUYR7Y2KA",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/blackMeme.jpg?token=GHSAT0AAAAAABSX2BBP2VDGNN4XZAO3AF7IYR7YWEQ",
             ]}
           />
-
         </>
       ),
     },
@@ -115,19 +114,18 @@ function App() {
           <p ref={formRef}>As camisas são cina e preto heein!</p>
           <Carrossel
             imgSrcs={[
-              "/images/classicWhiteTshirt.jpg",
-              "/images/classicBlackTshirt.jpg",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/whiteMemeTshirt.jpg?token=GHSAT0AAAAAABSX2BBPY3NUEM5ESQN67GS6YR7Y3AQ",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/classicBlackTshirt.jpg?token=GHSAT0AAAAAABSX2BBO22ULKPMB4XK67MRAYR7YYFA",
             ]}
           />
-          <br/>
+          <br />
           <p>Dá uma olhadinha mais de perto no design:</p>
           <Carrossel
             imgSrcs={[
-              "/images/classicWhite.jpg",
-              "/images/classicBlack.jpg",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/classicWhite.jpg?token=GHSAT0AAAAAABSX2BBPEHDUGQLAZGJU4SL2YR7YY2Q",
+              "https://raw.githubusercontent.com/BiggerThanOurselves/CCamiseirosBancoImg/main/classicBlack.jpg?token=GHSAT0AAAAAABSX2BBOIYHPSZ4ZGMO54VSIYR7YXRA",
             ]}
           />
- 
         </>
       ),
     },
