@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display:flex;
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   background: white;
@@ -21,6 +22,7 @@ export const Container = styled.div`
     border: 1px solid #c5c6ca;
     boder-radius: 7px;
     cursor: pointer;
+    position: relative;
   }
 
   button:hover {
@@ -29,6 +31,7 @@ export const Container = styled.div`
 
   img {
     width: 100%;
+    position: relative;
   }
 `;
 
