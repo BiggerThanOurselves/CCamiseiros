@@ -71,7 +71,7 @@ function App() {
             Para garantir sua(s) camiseta(s) basta preencher o form:{" "}
             <strong>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfxAa3ftT0rOfZ_GrVIk6Ulr-Yh7txp2NuIx2uHtYVgCB-ELw/viewform"
+                href="https://forms.gle/65F9Ez6he511j3gB9"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -93,7 +93,7 @@ function App() {
       fixed: false,
       children: (
         <>
-          <p>As camisetas são cinza e pretas heinn</p>
+          <p>As camisetas são brancas e pretas heinn</p>
           <Carrossel
             imgSrcs={[
               "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/whiteMemeShirt.jpg",
@@ -121,7 +121,7 @@ function App() {
       children: (
         <>
           <p ref={formRef}>Uma proposta mais clássica mas nada típica</p>
-          <p ref={formRef}>As camisas são cinza e preto heein!</p>
+          <p ref={formRef}>As camisas são brancas e pretas heein!</p>
           <Carrossel
             imgSrcs={[
               "https://raw.githubusercontent.com/RodrigoEC/docker/master/img/classWhiteShirt.jpg",
