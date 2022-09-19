@@ -87,6 +87,18 @@ function App() {
       ),
     },
     {
+      avatarSrc: "https://avatars.githubusercontent.com/u/42751604?v=4",
+      username: "Pipica",
+      title: "Não sabe qual tamanho pedir? Podemos te ajudar!!",
+      fixed: false,
+      children: (
+        <>
+          <p>Olhaii as medidas!</p>
+          <img src="images/medidas.jpeg" alt="imagem das medidas de camisetas, sendo p, m e g unissex e babylook"/>
+        </>
+      ),
+    },
+    {
       avatarSrc: "https://avatars.githubusercontent.com/u/50140771?v=4",
       username: "Leandra Ubuntu",
       title: "Design 01 - babou bebê?",
